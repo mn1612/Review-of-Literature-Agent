@@ -1,10 +1,6 @@
 openai
-json
-os
 pypdf
 pyalex
 python-docx
-time
-io
 pandas
 streamlit

@@ -120,6 +120,7 @@ if __name__ == "__main__":
                     )
             else:     
                 topic_header = st.empty()
+                st.header("Reviews of Literature for Selected Topics")
                 for topic in selected_items:
                     if topic not in st.session_state.citations:
                         topic_header.subheader(f"Compiling literature review for {topic}")

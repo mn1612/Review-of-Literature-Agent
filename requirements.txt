@@ -4,3 +4,4 @@ pyalex
 python-docx
 pandas
 streamlit
+xlsxwriter

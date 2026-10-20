@@ -131,7 +131,6 @@ if __name__ == "__main__":
                             topic, st.session_state.compiled_citations[topic])
                     st.subheader(topic)
                     st.write(st.session_state.lit_reviews[topic])
-		
 		topic_header.subheader("Completed compiling literature reviews for selected topics")
                 st.header("References")
                 references = []

@@ -131,8 +131,8 @@ if __name__ == "__main__":
                         st.session_state.lit_reviews[topic] = st.session_state.review.lit_review(
                             topic, st.session_state.compiled_citations[topic])
                     st.subheader(topic)
-                    st.markdown(st.session_state.lit_reviews[topic],
-                                text_alginment = "justify")
+                    st.markdown(body = st.session_state.lit_reviews[topic],
+                                text_alignment = "justify")
 
                 topic_header.info("Completed compiling literature reviews for selected topics")
 

@@ -123,7 +123,7 @@ if __name__ == "__main__":
                 st.header("Reviews of Literature for Selected Topics")
                 for topic in selected_items:
                     if topic not in st.session_state.citations:
-                        topic_header.subheader(f"Compiling literature review for {topic}")
+                        topic_header.info(f"Compiling literature review for {topic}")
                         st.session_state.citations[topic] = st.session_state.review.get_citations(
                             topic, st.session_state.topics[topic])
                         st.session_state.compiled_citations[topic] = st.session_state.review.compile_citations(
@@ -133,7 +133,7 @@ if __name__ == "__main__":
                     st.subheader(topic)
                     st.write(st.session_state.lit_reviews[topic])
 
-                topic_header.subheader("Completed compiling literature reviews for selected topics")
+                topic_header.info("Completed compiling literature reviews for selected topics")
 
                 st.header("References")
                 references = []
